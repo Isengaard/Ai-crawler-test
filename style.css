@@ -9,7 +9,7 @@ body {
 /* Add a common style for all quote divs */
 #darth-quote,
 #luke-quote {
-  font-size: 20px;
+  font-size: 12px;
   font-style: italic; /* Make text italic */
   margin-top: 20px; /* Add margin before each quote */
 }
