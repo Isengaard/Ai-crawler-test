@@ -6,11 +6,10 @@ body {
   color: white; /* Set text color to white */
 }
 
-#message {
-  font-size: 20px;
-  color: white; /* Ensure the text in the message div is white */
-  margin-top: 20px;
-}
+/* Add a common style for all quote divs */
+#darth-quote,
 #luke-quote {
-  border: 1px solid red;
+  font-size: 20px;
+  font-style: italic; /* Make text italic */
+  margin-top: 20px; /* Add margin before each quote */
 }
