@@ -11,3 +11,6 @@ body {
   color: white; /* Ensure the text in the message div is white */
   margin-top: 20px;
 }
+#luke-quote {
+  border: 1px solid red;
+}
