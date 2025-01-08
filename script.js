@@ -1,16 +1,23 @@
-// Wait for the DOM to fully load before executing the script
 document.addEventListener("DOMContentLoaded", () => {
+  console.log("DOM fully loaded and parsed");
 
-  // Select the div with id 'message' (originally containing the static HTML content)
+  // Update the 'message' div dynamically
   const messageDiv = document.getElementById("message");
-  
-  // Replace the static content in 'message' div with new dynamic content
-  messageDiv.textContent = "The Force is strong with this AI crawler! Welcome to the bright side.";
+  if (messageDiv) {
+    messageDiv.textContent = "The Force is strong with this AI crawler! Welcome to the bright side.";
+  }
 
-  // Select the empty div with id 'luke-quote'
+  // Update the 'luke-quote' div with a dynamic quote
   const lukeQuoteDiv = document.getElementById("luke-quote");
+  if (lukeQuoteDiv) {
+    lukeQuoteDiv.textContent =
+      '"Luke Skywalker is the everyman, the ordinary farm boy who dreams of adventure and becomes a hero. His journey is about hope, self-discovery, and the strength to confront fear." - George Lucas';
+  }
 
-  // Inject a dynamic quote about Luke Skywalker into the 'luke-quote' div
-  lukeQuoteDiv.textContent =
-    '"Luke Skywalker is the everyman, the ordinary farm boy who dreams of adventure and becomes a hero. His journey is about hope, self-discovery, and the strength to confront fear." - George Lucas';
+  // Dynamically change the image to Darth Vader
+  const characterImage = document.getElementById("character-image");
+  if (characterImage) {
+    characterImage.src = "darth.jpg"; // Update image source
+    characterImage.alt = "Darth Vader"; // Update alt text
+  }
 });
