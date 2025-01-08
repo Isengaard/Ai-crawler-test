@@ -4,12 +4,59 @@ body {
   margin: 20px;
   background-color: black; /* Set background to black */
   color: white; /* Set text color to white */
+  font-size: 1rem; /* Base font size for relative scaling */
+}
+
+/* Style for the image */
+#character-image {
+  max-width: 400px; /* Maximum width for the image */
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 1rem; /* Add space between the header and image */
 }
 
 /* Add a common style for all quote divs */
+#message,
 #darth-quote,
 #luke-quote {
-  font-size: 12px;
+  font-size: 1.25rem; /* Relative to the body font size */
   font-style: italic; /* Make text italic */
-  margin-top: 20px; /* Add margin before each quote */
+  margin-top: 1.5rem; /* Add spacing before each quote */
+}
+
+/* Adjust font sizes for larger desktop viewports */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.25rem; /* Increase base font size for larger screens */
+  }
+
+  #message,
+  #darth-quote,
+  #luke-quote {
+    font-size: 1.5rem; /* Adjust quote font size proportionally */
+    margin-top: 2rem; /* Increase spacing for better layout on large screens */
+  }
+
+  #character-image {
+    margin-top: 1.5rem; /* Slightly more spacing on larger screens */
+  }
+}
+
+/* Adjust font sizes for extra-large desktop viewports */
+@media (min-width: 1440px) {
+  body {
+    font-size: 1.5rem; /* Further increase base font size for very large screens */
+  }
+
+  #message,
+  #darth-quote,
+  #luke-quote {
+    font-size: 1.75rem; /* Further adjust quote font size proportionally */
+    margin-top: 2.5rem; /* Increase spacing for larger screens */
+  }
+
+  #character-image {
+    max-width: 500px; /* Increase the maximum size for larger viewports */
+    margin-top: 2rem; /* Add more spacing for readability */
+  }
 }
