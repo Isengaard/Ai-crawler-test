@@ -9,7 +9,7 @@ body {
 
 /* Style for the image */
 #character-image {
-  max-width: 18.75rem; /* 300px equivalent in rem (300px / 16px) */
+  max-width: 9rem; 
   width: 100%; /* Make the image responsive */
   height: auto; /* Maintain aspect ratio */
   margin-top: 1rem; /* Add space between the header and image */
